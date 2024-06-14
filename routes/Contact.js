@@ -20,16 +20,16 @@ router.get("/", getAllContact);
 router.get("/:id", getContactById);
 
 // add contact
-router.post("/add",Authenticate, addContact);
+router.post("/add", addContact);
 
 // update contact
-router.put("/:id",Authenticate, updateContactById);
+router.put("/:id", Authenticate, updateContactById);
 
 // delete contact
-router.delete("/:id",Authenticate, deleteContact);
+router.delete("/:id", Authenticate, deleteContact);
 
 
 // contact by userId
-router.get("/userid/:id",getContactByUserId);
+router.get("/userid/:id", getContactByUserId);
 
 export default router;
